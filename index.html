@@ -2,37 +2,29 @@
 <html lang="en-us">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Movie List Creator</title>
+<!--     <link rel="icon" href="assets/images/favcon.jpg"> -->
 
-
-    <link rel="icon" href="assets/images/favcon.jp">
-
+    <link rel="icon" href="assets/images/oceanic.png">
     <!  Add jQuery library link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <! Add reset link>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
     <! Add bootstrap link>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
     <! Add stylesheet link>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-
-
 </head>
-<body>
 
-<div id="player">
+<body>
+    <div id="player">
         <audio autoplay hidden>
             <source src="assets/thx-soundtest.wav" type="audio/wav">
         </audio>
     </div>
-
-<div class=jumbotron">
+    <div class=jumbotron">
 <h1>Movie List Maker</h1>
 <h2>Create a Movie List & Click for Summaries</h2>
 <div id="myDIV" class="header">
@@ -54,12 +46,13 @@
                     <p><input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" /></p>
                     <p><input type="submit" value="Search" class="form-control btn btn-primary w100"></p>
                 </form>
-                <div id="results"></div>
+                <div id="results">
+                     <iframe class="video w100" width="640" height="360" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
-        <iframe class="video w100" width="640" height="360" src="https://www.youtube.com/embed/qo5jJpHtI1Y" frameborder="0" allowfullscreen></iframe>
-        
+
         <!-- scripts -->
         <script type="text/javascript" src="assets/javascript/auth.js"></script>
         <script type="text/javascript" src="assets/javascript/app.js"></script>
